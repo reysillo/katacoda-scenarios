@@ -1,11 +1,11 @@
 {
-  "title": "Hello World Scenariossx",
-  "description": "Your First Scenario",
+  "title": "Docker",
+  "description": "Taller prácctico",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Paso 1 - Instalación",
       "text": "step1.md"
     }],
     "intro": {

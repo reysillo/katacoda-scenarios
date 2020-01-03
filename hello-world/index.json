@@ -5,7 +5,7 @@
   "time": "5 minutes",
   "details": {
     "steps": [{
-      "title": "Paso 1 - Instalación",
+      "title": "Instalación",
       "text": "step1.md"
     }],
     "intro": {

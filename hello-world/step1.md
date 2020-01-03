@@ -13,7 +13,7 @@ gnupg-agent software-properties-common`{{execute}}
 4. Instale el repositorio estable  
 `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"`{{execute}}  
 
-5. Actualice el indice de paquetes de apt  
+5. Actualice el indice de paquetes de `apt`  
 `sudo apt-get update`{{execute}}  
 
 6. Instale la última versión de  Docker CE y containerd.  

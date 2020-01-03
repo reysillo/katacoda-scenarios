@@ -1,7 +1,7 @@
 Siga los siguientes pasos para instalar docker  
 
 1. Actualice el indice de paquetes de apt  
-`sudo apt-get update'`{{execute}}  
+`sudo apt-get update`{{execute}}  
 
 2. Habilitar a apt para hacer uso de repositorios sobre HTTPS  
 `sudo apt-get install apt-transport-https ca-certificates curl 

@@ -18,3 +18,6 @@ gnupg-agent software-properties-common`{{execute}}
 
 6. Instale la última versión de  Docker CE y containerd.  
 `sudo apt-get install docker-ce=18.06.1~ce~3-0~ubuntu`{{execute}}
+
+7. Revise la versión de docker que ha sido instalada.  
+`docker --version`{{execute}}

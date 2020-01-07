@@ -4,14 +4,14 @@ Revisión la versión de docker que ha sido instalada.
 `docker --version`{{execute}}
 
 ## Imágenes  
-Descargar una imagen de un registry (DockerHub)
-`docker pull nginx`{{execute}}
+Descargar una imagen de un registry (DockerHub)  
+`docker pull nginx`{{execute}}  
 
-Ver imágenes descargadas o creadas
-`docker rmi nginx`{{execute}}
+Ver imágenes descargadas o creadas  
+`docker images`{{execute}}  
 
-Borrar una imagen
-`docker rmi nginx`{{execute}}
+Borrar una imagen  
+`docker rmi -f nginx`{{execute}}  
 
 ## Contenedores  
 Iniciar un contenedor apartir de una imagen (daemon mode)

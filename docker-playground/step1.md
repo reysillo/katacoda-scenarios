@@ -20,11 +20,17 @@ Iniciar un contenedor apartir de una imagen (daemon mode)
 Ver contenedores en ejecución
 `docker ps`{{execute}}
 
-Detener un contenedor
+Pausar un contenedor
 `docker stop [container-id]`{{execute}}
 
 Reinciar un contenedor
 `docker start [container-id]`{{execute}}
+
+Detener un contenedor
+`docker stop [container-id]`{{execute}}
+
+Ver todos los contenedores del sistema  
+`docker ps -a`{{execute}}  
 
 Borrar un contenedor
 `docker rm -f [container-id]`{{execute}}

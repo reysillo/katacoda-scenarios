@@ -34,3 +34,21 @@ Ver todos los contenedores del sistema
 
 Borrar un contenedor
 `docker rm -f [container-id]`{{execute}}
+
+---
+## Correr código en un contendor en ejecución
+
+Ejecución de un contenedor  
+`docker run ubuntu`{{execute}}  
+
+Modo interactivo (-i), obtener la entrada y la salida estándar del terminal TTY (-t)  
+`docker run -it ubuntu`{{execute}}  
+
+Identifique la versión del kernel de la distribución de Oracle Linux  
+`docker run -it oraclelinux`{{execute}}  
+
+Verifique la versión del sistema operativo actual  
+`cat /etc/*-release`{{execute}}  
+
+Ejecución de código al arranque del contenedor  
+`docker run ubuntu ls`{{execute}}  

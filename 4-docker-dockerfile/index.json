@@ -10,7 +10,7 @@
     }],
     "assets": {
       "host01": [
-        { "file": "*",    "target": "/root/" }
+        { "file": "*",    "target": "~/" }
       ]
     },
     "finish": {

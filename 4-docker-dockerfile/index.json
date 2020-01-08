@@ -22,5 +22,10 @@
   },
   "backend": {
     "imageid": "ubuntu"
-  }
+  },
+  "files":[
+    "index.html",
+    "Dockerfile"
+  ]
+
 }

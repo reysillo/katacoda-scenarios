@@ -8,7 +8,7 @@
  `touch mi-carpeta-local/mi-archivo1.txt`{{execute}}  
 
 3. Iniciar un contenedor con un volumen a partir de mi-carpeta-local  
-. `docker run -it --name contenedor2 -v mi-carpeta-local/carpeta-en-docker ubuntu`{{execute}} 
+. `docker run -it --name contenedor2 -v $(pwd)/mi-carpeta-local/carpeta-en-docker ubuntu`{{execute}} 
 
 4. Verificación del  la carpeta montada  
 `ls /carpeta-en-docker`{{execute}}  

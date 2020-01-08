@@ -28,12 +28,13 @@
   
 
   "assets": {
-
-    "host01": [
+    "client": [
       {
         "file": "index.html",
         "target": "~/demo/"
-      },
+      }
+    ],
+    "host01": [
       {
         "file": "Dockerfile",
         "target": "~/demo/"

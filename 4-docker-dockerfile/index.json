@@ -26,19 +26,10 @@
     "imageid": "ubuntu"
   },
   
-
   "assets": {
-    "client": [
-      {
-        "file": "index.html",
-        "target": "~/"
-      }
-    ],
     "host01": [
-      {
-        "file": "Dockerfile",
-        "target": "~/"
-      }
+      { "file": "index.html",    "target": "~/" },
+      { "file": "Dockerfile",    "target": "~/" }
     ]
   }
 }

@@ -25,7 +25,5 @@
   },
   "backend": {
     "imageid": "ubuntu"
-  },
-  
-  
+  }
 }

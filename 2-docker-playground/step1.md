@@ -14,25 +14,25 @@ Borrar una imagen
 `docker rmi -f nginx`{{execute}}  
 
 ## Contenedores  
-Iniciar un contenedor apartir de una imagen (daemon mode)
+Iniciar un contenedor apartir de una imagen (daemon mode)  
 `docker run -d nginx`{{execute}}
 
-Ver contenedores en ejecución
+Ver contenedores en ejecución  
 `docker ps`{{execute}}
 
-Pausar un contenedor
+Pausar un contenedor  
 `docker stop [container-id]`{{execute}}
 
-Reinciar un contenedor
+Reinciar un contenedor  
 `docker start [container-id]`{{execute}}
 
-Detener un contenedor
+Detener un contenedor  
 `docker stop [container-id]`{{execute}}
 
-Ver todos los contenedores del sistema  
+Ver todos los contenedores del sistema   
 `docker ps -a`{{execute}}  
 
-Borrar un contenedor
+Borrar un contenedor  
 `docker rm -f [container-id]`{{execute}}
 
 ---
@@ -44,11 +44,25 @@ Ejecución de un contenedor
 Modo interactivo (-i), obtener la entrada y la salida estándar del terminal TTY (-t)  
 `docker run -it ubuntu`{{execute}}  
 
-Identifique la versión del kernel de la distribución de Oracle Linux  
-`docker run -it oraclelinux`{{execute}}  
+Salir de contenedor en ejecución  
+`exit`{{execute}}  
 
-Verifique la versión del sistema operativo actual  
+Identifique la versión del kernel de la distribución de Linux (host) 
 `cat /etc/*-release`{{execute}}  
 
-Ejecución de código al arranque del contenedor  
+Inicie un contenedor de Oracle Linux  
+`docker run -it oraclelinux`{{execute}}  
+
+Identifique la versión del kernel de la distribución de Oracle Linux  
+`cat /etc/*-release`{{execute}}  
+
+Salir de contenedor en ejecución  
+`exit`{{execute}}  
+
+---
+## Correr código en un contendor al iniciar
+ver el directorio actual  
+`ls`{{execute}}  
+
+Ejecución del comando ls al arrancar el contenedor  
 `docker run ubuntu ls`{{execute}}  

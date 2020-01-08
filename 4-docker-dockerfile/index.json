@@ -18,6 +18,7 @@
   },
   "environment": {
     "uilayout": "terminal",
+    "dashboards": [{"name": "Apache 80", "port": 80}],
     "uimessage1": "\u001b[32m - Carpe Diem.\u001b[m\r\n"
   },
   "backend": {

@@ -1,6 +1,6 @@
-El objetivo de este módulo es demostrar que es posible crear volumenes de forma independiente a los contenedores
+El objetivo de este módulo es demostrar que es posible crear volumenes de forma independiente a los contenedores  
 
-1. Revisión de los volumenes, compruebe que no existe ningún volumen 
+1. Revisión de los volumenes, compruebe que no existe ningún volumen  
 `docker volume ls`{{execute}}  
 
 2. Iniciar un contenedor con un nuevo volumen  

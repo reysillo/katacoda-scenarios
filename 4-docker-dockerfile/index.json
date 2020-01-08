@@ -28,7 +28,8 @@
   
 
   "assets": {
-    "client": [
+
+    "host01": [
       {
         "file": "index.html",
         "target": "~/demo/"

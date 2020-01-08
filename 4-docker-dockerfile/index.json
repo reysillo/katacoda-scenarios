@@ -10,7 +10,7 @@
     }],
     "assets": {
       "host01": [
-        { "file": "Dockerfile",    "target": "/root/" }
+        { "file": "*",    "target": "/root/" }
       ]
     },
     "finish": {

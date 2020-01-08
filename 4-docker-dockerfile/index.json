@@ -24,9 +24,16 @@
   "backend": {
     "imageid": "ubuntu"
   },
-  "files":[
-    "index.html",
-    "Dockerfile"
+  "host01": [
+    {
+      "file": "index.html",
+      "target": "~/demo/"
+    },
+    {
+      "file": "Dockerfile",
+      "target": "~/demo/"
+    }
   ]
+
 
 }

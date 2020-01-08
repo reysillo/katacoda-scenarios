@@ -25,14 +25,19 @@
   "backend": {
     "imageid": "ubuntu"
   },
-  "host01": [
-    {
-      "file": "index.html",
-      "target": "~/demo/"
-    },
-    {
-      "file": "Dockerfile",
-      "target": "~/demo/"
-    }
-  ]
+  
+
+  "assets": {
+    "client": [
+      {
+        "file": "index.html",
+        "target": "~/demo/"
+      },
+      {
+        "file": "Dockerfile",
+        "target": "~/demo/"
+      }
+    ]
+  }
+
 }

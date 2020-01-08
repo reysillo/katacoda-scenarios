@@ -31,13 +31,13 @@
     "client": [
       {
         "file": "index.html",
-        "target": "~/demo/"
+        "target": "~/"
       }
     ],
     "host01": [
       {
         "file": "Dockerfile",
-        "target": "~/demo/"
+        "target": "~/"
       }
     ]
   }

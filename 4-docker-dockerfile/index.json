@@ -8,7 +8,10 @@
       "title": "Comando docker build ",
       "text": "step1.md"
     }],
-    "intro": {
+    "assets": {
+      "host01": [
+        { "file": "Dockerfile",    "target": "/root/" }
+      ]
     },
     "finish": {
       "text": "finish.md"
@@ -24,9 +27,5 @@
     "imageid": "ubuntu"
   },
   
-  "assets": {
-    "host01": [
-      { "file": "Dockerfile",    "target": "/root/" }
-    ]
-  }
+  
 }

@@ -1,0 +1,29 @@
+{
+  "title": "Docker - Docker Compose",
+  "description": ".",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Comando docker build ",
+      "text": "step1.md"
+    }],
+    "assets": {
+      "host01": [
+        { "file": "*",    "target": "~/" }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Apache 80", "port": 80}],
+    "uimessage1": "\u001b[32m - Carpe Diem.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

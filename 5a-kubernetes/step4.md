@@ -10,56 +10,57 @@
 3. Ver la lista de los deployments para comprobar el deployment creado 
 `kube get deployments`{{execute}} 
 
-3. Ver el detalle del nuevo deployment
+4. Ver el detalle del nuevo deployment
 `kube describe deployment nginx-deployment`{{execute}} 
 
-2. Obtener la lista de los pods del namespace
+5. Obtener la lista de los pods del namespace
 `kube get pods`{{execute}}   
 
-4. Escalar un Deployment
+6. Escalar un Deployment
 `kube scale deployment nginx-deployment --replicas=10`{{execute}} 
 
-5. Ver la lista de los replicaset de un deployment
+7. Ver la lista de los replicaset de un deployment
 `kube get rs`{{execute}} 
 
-2. Obtener la lista de los pods del namespace
+8. Obtener la lista de los pods del namespace
 `kube get pods`{{execute}}   
 
-4. Escalar un Deployment
+9. Escalar un Deployment
 `kube scale deployment nginx-deployment --replicas=2`{{execute}} 
 
 
-6. Ver la lista de los pods
+10. Ver la lista de los pods
 `kube get pods`{{execute}} 
 
 ---
+## Actualizando un Deployment  
 `clear`{{execute}}  
 
-7. Ver el detalle del nuevo deployment
+1. Ver el detalle del nuevo deployment  
 `kube describe deployment nginx-deployment`{{execute}} 
 
-8. Actualizar un deployment
+2. Actualizar un deployment
 `kube set image deployment nginx-deployment nginx-deployment=nginx:1.17 --all`{{execute}} 
 
 
-9. Ver la lista de los pods
+3. Ver la lista de los pods
 `kube get pods`{{execute}} 
 
-10. Actualizar un deployment
+4. Actualizar un deployment
 `kube set image deployment nginx-deployment nginx-deployment=nginx:xxx --all`{{execute}} 
 
-Roll Back 
+5. Roll Back 
 `kubectl rollout undo deployments/nginx-deployment`
 {execute}} 
 
-11. Ver la lista de los replicaset de un deployment
+6. Ver la lista de los replicaset de un deployment
 `kube get rs`{{execute}} 
 
-12. Ver la lista de los pods
+7. Ver la lista de los pods
 `kube get pods`{{execute}} 
 
-13. Tambien podemos hacerlo modificando el yaml generado 
+8. Tambien podemos hacerlo modificando el yaml generado 
 `kube set edit deployment nginx-deployment`{{execute}} 
 
-14. Eliminar un deployment 
+9. Eliminar un deployment 
 `kube delete deployment nginx-deployment `{{execute}}  

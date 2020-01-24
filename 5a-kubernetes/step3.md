@@ -8,7 +8,7 @@
 `k describe nginx-deployment`{{execute}} 
 
 4. Escalar un Deployment
-`k scale deployment nginx-deployment --replicas=4`{{execute}} 
+`k scale deployment nginx-deployment --replicas=10`{{execute}} 
 
 5. Ver la lista de los replicaset de un deployment
 `k get rs`{{execute}} 
@@ -16,5 +16,17 @@
 6. Ver la lista de los pods
 `k get pods`{{execute}} 
 
-7. Eliminar un deployment 
+7. Actualizar un deployment
+`k set image deployment nginx-deployment nginx=nginx:1.17 --all`{{execute}} 
+
+5. Ver la lista de los replicaset de un deployment
+`k get rs`{{execute}} 
+
+6. Ver la lista de los pods
+`k get pods`{{execute}} 
+
+8. Tambien podemos hacerlo modificando el yaml generado 
+`k set edit deployment nginx-deployment`{{execute}} 
+
+9. Eliminar un deployment 
  `k delete deployment nginx-deployment `{{execute}}  

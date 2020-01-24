@@ -11,7 +11,8 @@ Los comandos más comunes para el trabajo con pods en Kubernetes son:
 2. Obtener la lista de los pods del namespace
 `k get pods`{{execute}}    
 
-3. Crear un pod desde un archivo yaml
+3. Crear recursos desde un archivo yaml
+`cat pod.yaml`{{execute}}  
 `k apply -f pod.yaml`{{execute}}  
 
 4. Ver los detalles del nuevo pod creado
@@ -23,7 +24,7 @@ Los comandos más comunes para el trabajo con pods en Kubernetes son:
 6. Ejecutar un comando dentro de un contenedor
 `k exec [] ls`
 
-7. Eliminar un contendor
+7. Eliminar un pod
 `k delete pod []`
 
 8. Eliminar recursos desde un archivo yaml

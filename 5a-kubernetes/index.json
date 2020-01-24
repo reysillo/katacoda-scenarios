@@ -11,6 +11,11 @@
     {
       "title": "Pods",
       "text": "step2.md"
+    }
+    ,
+    {
+      "title": "Deployments",
+      "text": "step3.md"
     }],
     "assets": {
       "host01": [

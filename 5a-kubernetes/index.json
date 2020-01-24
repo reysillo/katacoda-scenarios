@@ -19,7 +19,8 @@
     }],
     "assets": {
       "host01": [
-        { "file": "config",    "target": "~/.kube/" }
+        { "file": "config",    "target": "~/.kube/" },
+        { "file": "*.yaml",    "target": "~/" }
       ]
     },
     "finish": {

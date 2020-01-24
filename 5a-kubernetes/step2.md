@@ -6,26 +6,26 @@ Los comandos más comunes para el trabajo con pods en Kubernetes son:
   * kubectl exec: ejecuta un comando en un contenedor de un pod
 
 1. Crear un alias con el comando kubectl y el namespace creado anteriormente
-`alias k='kubectl -n []'`
+`alias kube='kubectl -n []'`
 
 2. Obtener la lista de los pods del namespace
-`k get pods`{{execute}}    
+`kube get pods`{{execute}}    
 
 3. Crear recursos desde un archivo yaml
 `cat pod.yaml`{{execute}}  
-`k apply -f pod.yaml`{{execute}}  
+`kube apply -f pod.yaml`{{execute}}  
 
 4. Ver los detalles del nuevo pod creado
-`k describe pod []`
+`kube describe pod []`
 
 5. Ver los logs del nuevo pod creado
-`k logs []`
+`kube logs []`
 
 6. Ejecutar un comando dentro de un contenedor
-`k exec [] ls`
+`kube exec [] ls`
 
 7. Eliminar un pod
-`k delete pod []`
+`kube delete pod []`
 
 8. Eliminar recursos desde un archivo yaml
-`k delete -f pod.yaml`{{execute}}  
+`kube delete -f pod.yaml`{{execute}}  

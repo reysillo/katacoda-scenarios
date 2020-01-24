@@ -1,0 +1,23 @@
+{
+  "title": "Kubernetes",
+  "description": ".",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Configuración de kubectl",
+      "text": "step1.md"
+    }],
+    "assets": {
+      "host01": [
+        { "file": "config",    "target": "~/.kube/config" }
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "Kubernetes"
+  }
+}

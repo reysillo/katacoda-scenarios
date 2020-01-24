@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "itestapp-cluster"
+  cluster:
+    server: "https://itestapp.com/k8s/clusters/c-tlz8p"
+
+users:
+- name: "itestapp-cluster"
+  user:
+    token: "kubeconfig-user-6sjls:b7g64wfvvl8hgrpmk2flrths925hbss4hsrff2bsfrn47k4b8v88f2"
+
+contexts:
+- name: "itestapp-cluster"
+  context:
+    user: "itestapp-cluster"
+    cluster: "itestapp-cluster"
+
+current-context: "itestapp-cluster"

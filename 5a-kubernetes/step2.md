@@ -7,7 +7,8 @@ Los comandos más comunes para el trabajo con pods en Kubernetes son:
 
 `clear`{{execute}}  
 
-1. Crear un alias con el comando kubectl y el namespace creado anteriormente
+
+1. Crear un alias con el comando kubectl y el namespace creado anteriormente para no tener que escribir el comando completo todo el tiempo  
 `alias kube='kubectl -n []'`
 
 2. Obtener la lista de los pods del namespace

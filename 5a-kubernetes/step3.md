@@ -35,25 +35,23 @@
 2. Actualizar un deployment
 `kube set image deployment nginx-deployment nginx-deployment=nginx:1.17 --all`{{execute}} 
 
-
 3. Ver la lista de los pods
 `kube get pods`{{execute}} 
 
-4. Actualizar un deployment
+4. Actualizar el deployment a la versión xxx para generar un error
 `kube set image deployment nginx-deployment nginx-deployment=nginx:xxx --all`{{execute}} 
 
+5. Ver el estado de la actualización  
+`kube rollout status deployment/nginx-deployment`{{execute}} 
+
 5. Roll Back 
-`kubectl rollout undo deployments/nginx-deployment`
-{execute}} 
+`kube rollout undo deployment/nginx-deployment`{execute}} 
 
-6. Ver la lista de los replicaset de un deployment
-`kube get rs`{{execute}} 
+6. Ver el deployment para validar el rollback 
+`kube describe deployment nginx-deployment`{{execute}} 
 
-7. Ver la lista de los pods
-`kube get pods`{{execute}} 
-
-8. Tambien podemos hacerlo modificando el yaml generado 
+7. Tambien podemos hacerlo modificando el yaml generado 
 `kube set edit deployment nginx-deployment`{{execute}} 
 
-9. Eliminar un deployment 
+8. Eliminar un deployment 
 `kube delete deployment nginx-deployment `{{execute}}  

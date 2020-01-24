@@ -1,17 +1,20 @@
-## Montar un archivo o carpeta local a un contenedor
+1. Desplegar un deployment desde la linea de comandos 
+`k run nginx-deployment --image=nginx:1.16 --replicas=1`{{execute}} 
 
-1. Crear una carpeta en local
-`mkdir mi-carpeta-local`{{execute}}  
-`ls mi-carpeta-local`{{execute}}  
+2. Ver la lista de los deployments
+`k get deployments`{{execute}} 
 
-2. Crear un nuevo archivo local
- `touch /mi-carpeta-local/mi-archivo1.txt`{{execute}}  
+3. Ver el detalle del nuevo deployment
+`k describe nginx-deployment`{{execute}} 
 
-3. Iniciar un contenedor con un volumen a partir de mi-carpeta-local
-. `docker run -it --name contenedor2 -v mi-carpeta-local/carpeta-en-docker ubuntu`{{execute}} 
+4. Escalar un Deployment
+`k scale deployment nginx-deployment --replicas=4`{{execute}} 
 
-4. Verificación del  la carpeta montada
-`ls /carpeta-en-docker`{{execute}}  
+5. Ver la lista de los replicaset de un deployment
+`k get rs`{{execute}} 
 
-5. Crear un nuevo archivo en el contenedor  
- `touch /carpeta-en-docker/mi-archivo2.txt`{{execute}}  
+6. Ver la lista de los pods
+`k get pods`{{execute}} 
+
+7. Eliminar un deployment 
+ `k delete deployment nginx-deployment `{{execute}}  

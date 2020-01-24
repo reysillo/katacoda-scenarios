@@ -19,14 +19,14 @@
 7. Actualizar un deployment
 `k set image deployment nginx-deployment nginx=nginx:1.17 --all`{{execute}} 
 
-5. Ver la lista de los replicaset de un deployment
+8. Ver la lista de los replicaset de un deployment
 `k get rs`{{execute}} 
 
-6. Ver la lista de los pods
+9. Ver la lista de los pods
 `k get pods`{{execute}} 
 
-8. Tambien podemos hacerlo modificando el yaml generado 
+10. Tambien podemos hacerlo modificando el yaml generado 
 `k set edit deployment nginx-deployment`{{execute}} 
 
-9. Eliminar un deployment 
- `k delete deployment nginx-deployment `{{execute}}  
+11. Eliminar un deployment 
+`k delete deployment nginx-deployment `{{execute}}  

@@ -25,13 +25,6 @@
 8. Obtener la lista de los pods del namespace
 `kube get pods`{{execute}}   
 
-9. Escalar un Deployment
-`kube scale deployment nginx-deployment --replicas=2`{{execute}} 
-
-
-10. Ver la lista de los pods
-`kube get pods`{{execute}} 
-
 ---
 ## Actualizando un Deployment  
 `clear`{{execute}}  

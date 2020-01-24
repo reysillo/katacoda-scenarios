@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: web-app
+spec:
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+      - image: reysillo/service
+        name: web-app
+        ports:
+        - containerPort: 80
+          name: http
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-app-service
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: xxx.itestapp.com.
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    name: http
+    targetPort: 80
+  selector:
+    app: web-app

@@ -10,7 +10,7 @@
     }],
     "assets": {
       "host01": [
-        { "file": "config",    "target": "~/.kube/config" }
+        { "file": "config",    "target": "~/.kube/" }
       ]
     },
     "finish": {

@@ -7,6 +7,10 @@
     "steps": [{
       "title": "Configuración de kubectl",
       "text": "step1.md"
+    },
+    {
+      "title": "Pods",
+      "text": "step2.md"
     }],
     "assets": {
       "host01": [

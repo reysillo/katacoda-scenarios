@@ -1,20 +1,30 @@
-## Crear un volumen al vuelo 
-1. Revisión de los volumenes  
-`docker volume ls`{{execute}}  
+Los comandos más comunes para el trabajo con pods en Kubernetes son:
 
-2. Iniciar un contenedor con un nuevo volumen
-`docker run -it --name contenedor1 -v /nuevo-volumen ubuntu`{{execute}}  
+  * kubectl get - lista los recursos 
+  * kubectl describe: muestra información detallada sobre un recurso 
+  * kubectl logs: imprime los logs de un contenedor en una vaina 
+  * kubectl exec: ejecuta un comando en un contenedor de un pod
 
-3. Salir del contenedor Crtl+c
+1. Crear un alias con el comando kubectl y el namespace creado anteriormente
+`alias k='kubectl -n []'`
 
-4. Revisión de los volumenes  
-`docker volume ls`{{execute}}  
+2. Obtener la lista de los pods del namespace
+`k get pods`{{execute}}    
 
-5. Revisión de los contenedores
-`docker ps -a`{{execute}}  
+3. Crear un pod desde un archivo yaml
+`k apply -f pod.yaml`{{execute}}  
 
-6. Eliminar el contenedor creado
-`docker rm -f contenedor1`{{execute}}  
+4. Ver los detalles del nuevo pod creado
+`k describe pod []`
 
-Revisión de los volumenes  
-7. `docker volume ls`{{execute}}  
+5. Ver los logs del nuevo pod creado
+`k logs []`
+
+6. Ejecutar un comando dentro de un contenedor
+`k exec [] ls`
+
+7. Eliminar un contendor
+`k delete pod []`
+
+8. Eliminar recursos desde un archivo yaml
+`k delete -f pod.yaml`{{execute}}  
